@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgb(80, 144, 241);
+  --primary-color-button:  #4c66af;
+  --primary-color-button-hover:rgb(80, 144, 241);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+h1{
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 2.4em;
+}
+
+form input, form label, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+.senha-gerada{
+  font-size: 1.5em;
+  color: var(--primary-color);
+  margin: 40px 0;
+}
+.qtd-p{
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+input[type="checkbox"]{
+  width: 30px;
+  height: 25px;
+  padding: 0;
+  margin: 0 1px 0 10px
+  
+}
+
+.gerar-senha{
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-color-button);
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s;
+  margin: 0.5rem auto;
+  
+}
+button:hover{
+  background-color: var( --primary-color-button-hover);
+  box-shadow: 0px 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-item {
+    width: 50%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
